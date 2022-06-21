@@ -1,6 +1,6 @@
 {
-  "name": "react-currency-input-field",
-  "version": "3.6.9",
+  "name": "@journalytic/react-currency-input-field",
+  "version": "3.6.9-journalytic",
   "description": "React <input/> component for formatting currency and numbers.",
   "files": [
     "dist/**/*",
@@ -25,7 +25,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/cchanxzy/react-currency-input-field"
+    "url": "https://github.com/journalytic/react-currency-input-field"
   },
   "bugs": {
     "email": "cchan.xzy@gmail.com",
