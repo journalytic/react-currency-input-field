@@ -21,6 +21,13 @@ export type FormatValueOptions = {
   groupSeparator?: string;
 
   /**
+   * Literal separator
+   *
+   * Default = undefined
+   */
+  literalSeparator?: string;
+
+  /**
    * Turn off separators
    *
    * This will override Group separators

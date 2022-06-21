@@ -120,9 +120,15 @@ const replaceParts = (
     decimalSeparator,
     decimalScale,
     disableGroupSeparators = false,
+    literalSeparator,
   }: Pick<
     FormatValueOptions,
-    'prefix' | 'groupSeparator' | 'decimalSeparator' | 'decimalScale' | 'disableGroupSeparators'
+    | 'prefix'
+    | 'groupSeparator'
+    | 'decimalSeparator'
+    | 'literalSeparator'
+    | 'decimalScale'
+    | 'disableGroupSeparators'
   >
 ): string => {
   return parts
@@ -156,6 +162,10 @@ const replaceParts = (
           }
 
           return [...prev, decimalSeparator !== undefined ? decimalSeparator : value];
+        }
+
+        if (type === 'literal') {
+          return [...prev, literalSeparator !== undefined ? literalSeparator : value];
         }
 
         if (type === 'fraction') {
